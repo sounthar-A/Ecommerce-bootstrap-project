@@ -1,0 +1,45 @@
+.box-1{
+    /* background-color: green; */
+    border-width: 15px;
+    border-color: red;
+    border-style: double;
+    padding-top: 500px;
+  }
+
+  form {
+    /* This bit sets up the horizontal layout */
+    display:flex;
+    flex-direction:row;
+    
+    /* This bit draws the box around it */
+    border:1px solid grey;
+  
+    /* I've used padding so you can see the edges of the elements. */
+    padding:1px;
+  }
+  
+  input {
+    /* Tell the input to use all the available space */
+    flex-grow:2;
+    /* And hide the input's outline, so the form looks like the outline */
+    border:1px solid gray;
+    padding: 10PX;
+    width:150PX;
+  }
+  
+  /* remove the input focus blue box, it will be in the wrong place. */
+  input:focus {
+    outline: none;
+  }
+  
+  /* Add the focus effect to the form so it contains the button */
+  form:focus-within { 
+    outline: 1px solid blue 
+  }
+  
+  .buttons {
+    /* Just a little styling to make it pretty */
+    border:1px solid blue;
+    background:blue;
+    color:white;
+  }
